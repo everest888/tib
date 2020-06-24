@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>
+        Travel is beautiful
+    </title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="2.css">
+</head>
+
+<body>
+
+    <header>
+        <div class='header'>
+            <div class='nav_bar'>
+                <img src='images/logo.png'>
+                <nav>
+                    <a href=''>HOME</a>
+                    <a href=''>ABOUT</a>
+                    <a href=''>SERVICES</a>
+                    <a href=''>GALLERY</a>
+                    <a href=''>CONTACT</a>
+                </nav>
+            </div>
+            <div class="header_content">
+                <div class="header_content_left">
+                    <div class="travel_is">TRAVEL IS</div>
+                    <div class="beautiful">BEAUTIFUL</div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                </div>
+                <div class="header_content_right">
+                    <form id="request_form">
+                        <span>REQUEST A QUOTE</span>
+                        <input type="text" placeholder="Full Name">
+                        <input type="email" placeholder="Email Adress">
+                        <input type="text" placeholder="Fone Namber">
+                        <input type="text" placeholder="Country">
+                        <input type="checkbox" id="accept"><label for="accept">I accept the terms & conditions</label>
+                        <button type="submit">SEND</button>
+                        <div id="close_form_btn"><img src="images/close-btn.png"></div>
+                    </form>
+                    <div id="show_form_btn">SHOW REQUEST FORM</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="our_services">
+        <div class="our_services_content">
+            <div class="our_services_header"><span>OUR</span> SERVICES</div>
+            <div class="our_services_all">
+                <div class="our_services_item" id="item_1">
+                    <img src="images/Shape108.png">
+                    <p>Making your trip beautiful and easier</p>
+
+                </div>
+                <div class="our_services_item">
+                    <img src="images/Shape127.png">
+                    <p>Tools to help you succeed tommorow</p>
+
+                </div>
+                <div class="our_services_item">
+                    <img src="images/Shape106.png">
+                    <p>Ideas that will blow you out the blue.</p>
+
+                </div>
+                <div class="our_services_item" id="item_4">
+                    <img src="images/Shape97.png">
+                    <p>Navigate your path to beautiful world.</p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <div class="our_story">
+        <div class="our_story_content">
+            <p>We are in business for over 6 years providing amazing services to client and people love them to the core. View our story to know more.</p>
+            <a href="">OUR STORY</a>
+        </div>
+    </div>
+    <div class="pricing_header">PRICING</div>
+    <div class="pricing">
+        <div class="pricing_item">
+            <span>Starter</span>
+            <p>FREE</p>
+            <span>Free Service</span>
+            <span>Multiple Accounts</span>
+            <span>Management No</span>
+            <span>--</span>
+            <span>--</span>
+            <a href="">TRY</a>
+        </div>
+        <div class="pricing_item">
+            <div class="popular">Popular</div>
+            <span>Business</span>
+            <p>$97</p>
+            <span>Free Service</span>
+            <span>Multiple Accounts</span>
+            <span>Management No</span>
+            <span>Unlimited Data</span>
+            <span>--</span>
+            <a href="">SING AP</a>
+        </div>
+        <div class="pricing_item"> <span>Professional</span>
+            <p>$297</p>
+            <span>Free Service</span>
+            <span>Multiple Accounts</span>
+            <span>Management No</span>
+            <span>Unlimited Data</span>
+            <span>Whatever You Need</span>
+            <a href="">SING AP</a>
+        </div>
+    </div>
+
+    <section class="test-gal">
+
+        <div class="test">
+            <h1>TESTIMONIAL</h1>
+            <div class="test-item">
+                <p>I have been involved with this comapny for ages and just want to say this is a great work by designcoon.
+                    <span>DJ Bravo - Frequent Travelera</span></p>
+                <img src="images/TestimonialGuy.png">
+            </div>
+
+            <div class="test-item">
+                <p>I have been involved with this comapny for ages and just .
+                    <span>DJ Bravo - Frequent Travelera</span></p>
+                <img src="images/TestimonialGirl.png">
+            </div>
+
+        </div>
+        <div class="gal">
+            <h1>GALLERY</h1>
+            <div class="gal-item">
+                <img src="images/GalleryPic1.png">
+                <img src="images/GalleryPic2.png">
+                <img src="images/GalleryPic3.png">
+                <img src="images/GalleryPic4.png">
+                <img src="images/GalleryPic5.png">
+                <img src="images/GalleryPic6.png">
+            </div>
+            <a href="#">VIEW MORE PICTURES</a>
+        </div>
+    </section>
+    <footer>
+        <p>All Rights Reserved | 2016 | Designed with love by <span>DesignCoon</span></p>
+        <img src='images/Logo_footer.png'>
+    </footer>
+
+
+</body>
+<script type="text/javascript">
+    $('#show_form_btn').click(function() {
+        $(this).fadeToggle(500, function() {
+            $('#request_form').fadeToggle(500);
+            $('html,body').animate({
+                scrollTop: $('#request_form').offset().top
+            }, 1000)
+        });
+    });
+    $('#close_form_btn').click(function() {
+        $('#request_form').slideToggle(1000, function() {
+            $('#show_form_btn').fadeToggle(500);
+        });
+    });
+</script>
+
+</html>
